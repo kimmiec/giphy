@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 function Button(props) {
     
     return(
         <div>
-            <button>Click for Gifs!</button>
+            <button onClick={props.Giphy}>🌟 Click for Gifs! 🌟</button>
         </div>
     )
 }
@@ -12,9 +12,11 @@ function Button(props) {
 export default Button;
 
 
+
 // const [btn, setBtn] = useState({random:" "});
 
 //     const handleClick = (event) => {
-//         setBtn({...btn, [event.target.title]: event.target.img});
+//         setBtn({...btn, [event.target.title]: event.target.value});
 //     }
-//  onClick={() => {handleClick}}
+
+

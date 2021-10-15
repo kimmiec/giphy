@@ -11,7 +11,7 @@ function App() {
 
   const [giphy, setGiphy] = useState(null);
 
-  const getGiphy = async (random) => {
+  const getGiphy = async () => {
     const response = await fetch (
       `https://api.giphy.com/v1/gifs/random?api_key=${apiKey}`
     )

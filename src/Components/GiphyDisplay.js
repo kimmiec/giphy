@@ -4,16 +4,21 @@ function GiphyDisplay(props) {
     const {giphy} = props;
 
     const loaded = () => {
-        let randomGif = Math.floor(Math.random() * giphy.data.length);
+        // let randomGif = Math.floor(Math.random() * giphy.data.length);
         return (
             <>
-                <img src={giphy.data[0].images.original.url} alt="{giphy.data.[randomGif].title}"/>
+                <img src={giphy.data.images.original.url} alt="{giphy.data.title}"/>
             </>
         )
     }
 
     const loading = () => {
-        return <h1>No Giphy to Display</h1>
+        return (
+        <div>
+            <h3>⬆️</h3>
+            <h1>😊</h1>
+        </div>
+        )
     }
 
     return giphy ? loaded() : loading();

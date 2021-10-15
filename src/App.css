@@ -2,6 +2,16 @@
   text-align: center;
 }
 
+* {
+  background-color: lightblue;
+}
+
+button {
+  background-color: white;
+  border: 3px solid lightcoral;
+  margin-bottom: 10px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
